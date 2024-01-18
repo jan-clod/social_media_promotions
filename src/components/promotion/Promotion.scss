@@ -37,7 +37,7 @@
       .buttonContainer {
         margin: 30px 0 0 0;
         width: 600px;
-        button {
+        .button {
           width: 315px;
           height: 70px;
           font-size: 17px;
@@ -70,6 +70,21 @@
     z-index: 1;
   }
 }
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: #05050579;
+}
+.popup {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: -600px;
+}
 
 @media screen and (min-width: 1920px) {
   .promotion {
@@ -78,10 +93,13 @@
       z-index: 2;
       h1 {
         font-size: 90px;
+        font-weight: 400;
         margin: 200px 0 0 0;
       }
       h3 {
         margin: 0;
+        font-weight: 400;
+
         font-size: 54px;
       }
 

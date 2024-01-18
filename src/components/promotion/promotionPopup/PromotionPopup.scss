@@ -1,0 +1,91 @@
+.promotionPopup {
+    transition: all 0.5s;
+    transition: color .3s;
+    transition: margin .5s;
+    
+    position: relative;
+  top: 0;
+  overflow: hidden;
+  z-index: 200;
+  width: 1235px;
+  height: 700px;
+  background-color: white;
+  padding: 50px;
+  box-sizing: border-box;
+  color: black;
+
+  .title {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  .subtitle {
+    font-size: 20px;
+    color: #5b5b5b;
+    margin: 0 0 35px 0;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputanswer {
+    width: 350px;
+    height: 55px;
+    background-color: #ebf3ff;
+    border: 1px solid rgba(255, 0, 0, 0);
+    color: #3875dd;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+  .buttonContainer {
+    position: absolute;
+    bottom: 50px;
+    width: 1135px;
+    display: flex;
+    justify-content: center;
+  }
+  .checkboxConainer {
+    display: flex;
+    .checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #ebf3ff;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin: 0 20px 0 0;
+      .active {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      background-color: #0166fd;
+
+      }
+    }
+  }
+  .button {
+    width: 315px;
+    height: 70px;
+    border-radius: 7px;
+    font-size: 19px;
+
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 30, 97, 1) 0%,
+      rgba(56, 117, 221, 1) 100%
+    );
+    border: 0px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      background: linear-gradient(
+        90deg,
+        rgb(3, 24, 68) 0%,
+        rgb(5, 71, 184) 100%
+      );
+    }
+  }
+}

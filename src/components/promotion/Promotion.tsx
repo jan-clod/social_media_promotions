@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Promotion.scss';
 import Container from '../../UI/container/Container';
 import smm from '../../assets/promotion_block/СММ.png';
@@ -13,8 +13,10 @@ import network7 from '../../assets/promotion_block/7.png';
 import network8 from '../../assets/promotion_block/8.png';
 import network9 from '../../assets/promotion_block/9.png';
 import checkmark from '../../assets/promotion_block/checkmark.png';
+import { PromotionPopup } from './promotionPopup/PromotionPopup';
 
 export const Promotion: React.FC = () => {
+  const [openPopUp, setOpenPopUp] = useState(false);
   return (
     <div className="promotion">
       <Container className="container">
@@ -34,7 +36,9 @@ export const Promotion: React.FC = () => {
             <img src={network9} alt="404" className="network " />
           </div>
           <div className="buttonContainer">
-            <button>получить</button>
+            <button className="button" onClick={() => setOpenPopUp(true)}>
+              получить
+            </button>
             <div className="comercia">
               <img src={checkmark} alt="404" />
               коммерческое
@@ -52,7 +56,12 @@ export const Promotion: React.FC = () => {
       <img src={circle} alt="404" className="background circle2" />
       <img src={circle} alt="404" className="background circle3" />
       <img src={circle} alt="404" className="background circle4" />
+      {openPopUp && (
+        <div className='popup'>
+          <PromotionPopup />
+          <div className="wrapper" onClick={() => setOpenPopUp(false)}></div>
+        </div>
+      )}
     </div>
   );
 };
- 

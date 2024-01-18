@@ -6,7 +6,7 @@ import { QuestionBody } from './QuestionBody';
 import { data } from '../../../bll/data';
 
 export const Questionnaire: React.FC = () => {
-  let [index, setIndex] = useState(0); //индекс вопроса
+  let [num, setIndex] = useState(0); //индекс вопроса
   let [indexs, setIndexs] = useState(true);
   let [backQuestionDis, setBackQuestionDis] = useState(false);
   let [nextQuestionDis, setNextQuestionDis] = useState(false);
@@ -23,35 +23,36 @@ export const Questionnaire: React.FC = () => {
   };
 
   const backQuestionHandler = () => {
-    indexs && index > 0 && setIndex(index - 1);
+    indexs && num > 0 && setIndex(--num);
     setReply('');
   };
   const nextQuestionHandler = () => {
-    indexs && index < data.length && setIndex(index + 1);
+    indexs && num < data.length && setIndex(++num);
     replyToQuestion();
     setReply('');
+    debugger;
   };
 
   useEffect(() => {
-    indexs && index > 0 ? setBackQuestionDis(false) : setBackQuestionDis(true);
-    indexs && index < data.length - 1 && selectedAnswer.length <= 0
+    indexs && num > 0 ? setBackQuestionDis(false) : setBackQuestionDis(true);
+    indexs && num < data.length - 1 && selectedAnswer.length <= 0
       ? setNextQuestionDis(false)
       : setNextQuestionDis(true);
-  }, [indexs, index, selectedAnswer]);
+  }, [indexs, num, selectedAnswer]);
 
   return (
     <div className="questionnaire">
-      <div className="titleQuestion"> {data[index].question}</div>
+     {/*  <div className="titleQuestion"> {data[num].question}</div>
       <div className="progressBar">
         <div style={{ width: `${replyData.length}5%` }}></div>
-        <div>{++index}-й вопрос из 11</div>
+        <div>{++num}-й вопрос из 11</div>
       </div>
       <div className="questionBodyContainer">
-        {data[index].body.map((el, key) => (
+        {data[num].body.map((el, key) => (
           <QuestionBody
             reply={reply}
             setReply={setReply}
-            index={index}
+            index={num}
             clue={el.clue}
             answer={el.answer}
             setIndexs={setIndexs}
@@ -75,7 +76,7 @@ export const Questionnaire: React.FC = () => {
         >
           <img src={right} alt="404" className="img " />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -42,8 +42,8 @@ export const QuestionBody: React.FC<IAnswer & questionBody> = ({
               key={key}
               onClick={() => selectedAnswerToQuestion(index, el)}
             >
-              <div className="checkbox"></div>
-              <div>{el}</div>
+              <div className="checkbox" key={key}></div>
+              <div key={key}>{el}</div>
             </div>
           ))
         )}
