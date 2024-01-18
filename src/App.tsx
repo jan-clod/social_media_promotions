@@ -6,7 +6,11 @@ import ErrorPage  from './pages/ErrorPage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">safsafffffffffff
+    asfsfafsa
+    asfsfafsa
+    asfsfafsa
+    asfsfafsa
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/welcome" element={<ErrorPage />} />
