@@ -1,0 +1,134 @@
+.myСases {
+  position: relative;
+  margin-top: 150px;
+  background-color: #ebf3ff;
+  color: #ebf3ff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 30, 97, 1) 0%,
+    rgba(56, 117, 221, 1) 100%
+  );
+  border: 1px solid rgba(255, 0, 0, 0);
+  .arrow {
+    position: relative;
+    z-index: 3;
+    button {
+      background-color: #3874dd00;
+      border: 0px;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+    img {
+      margin: 10px;
+      width: 100px;
+    }
+  }
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    p {
+      margin: 0 20px;
+    }
+  }
+  .info {
+    z-index: 2;
+  }
+  .button {
+    position: relative;
+    z-index: 2;
+    border: 2px solid white;
+    background-color: #ebf3ff00;
+    border-radius: 7px;
+    color: white;
+    width: 315px;
+    height: 70px;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+  }
+  .container {
+    position: relative;
+  }
+  .background {
+    position: absolute;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .myСases {
+    font-size: 20px;
+    .title {
+      font-size: 30px;
+    }
+    .info {
+      width: 900px;
+    }
+    .background {
+      height: 900px;
+      top: -200px;
+      right: 0px;
+    }
+    .button {
+      margin: 65px 0;
+    }
+    .subTitle {
+      margin: 70px 0 20px 0;
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 1919px) {
+  .myСases {
+    font-size: 20px;
+    .title {
+      font-size: 30px;
+    }
+    .info {
+      width: 600px;
+    }
+    .background {
+      height: 800px;
+      top: -150px;
+      right: -50px;
+    }
+    .button {
+      margin: 65px 0;
+    }
+    .subTitle {
+      margin: 70px 0 20px 0;
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .myСases {
+    font-size: 16px;
+
+    .info {
+      width: 470px;
+    }
+    .background {
+      height: 570px;
+      top: -110px;
+      right: -50px;
+    }
+    .arrow{
+        img{
+            width: 76px;
+        }
+    }
+    .button {
+      margin: 10px 0 45px 0;
+    }
+    .subTitle {
+      margin: 70px 0 20px 0;
+      font-size: 19px;
+    }
+    .title {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.map {
+  .container {
+    position: relative;
+    display: flex;
+    color: #00309c;
+    .leftBlock {
+      .title {
+        font-size: 24px;
+        text-align: center;
+      }
+      .subTitle {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .arrow {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        margin: 0 0 -150px 0;
+
+        button {
+          background-color: #3874dd00;
+          border: 0px;
+          &:hover {
+            background-color: #e2e2e2;
+          }
+        }
+        img {
+          margin: 10px;
+          width: 100px;
+        }
+      }
+      .maps {
+        width: 940px;
+      }
+      z-index: 2;
+    }
+    .rightBlock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      .mapkarta {
+        margin-left: 20px;
+        width: 500px;
+      }
+    }
+    .background {
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .map {
+    height: 650px;
+    .container {
+      .leftBlock {
+        .title {
+          font-size: 24px;
+        }
+        .subTitle {
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        .arrow {
+          margin: 0 0 -150px 0;
+          img {
+            margin: 10px;
+            width: 100px;
+          }
+        }
+        .maps {
+          width: 900px;
+        }
+      }
+      .rightBlock {
+        .mapkarta {
+          margin-left: 20px;
+          width: 500px;
+        }
+      }
+      .background {
+        width: 420px;
+        bottom: 300px;
+        right: -100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1919px) {
+  .map {
+    height: 1050px;
+    .container {
+      flex-direction: column;
+      .leftBlock {
+        .title {
+          margin-top: 20px;
+          font-size: 24px;
+        }
+        .subTitle {
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        .arrow {
+          margin: 0 0 -150px 0;
+          img {
+            margin: 10px;
+            width: 100px;
+          }
+        }
+        .map {
+          width: 900px;
+        }
+      }
+      .rightBlock {
+        .mapkarta {
+          margin: -80px 0 0 20px;
+          width: 500px;
+        }
+      }
+      .background {
+        width: 420px;
+        bottom: 300px;
+        right: -100px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .map {
+    height: 1100px;
+
+    .container {
+      .leftBlock {
+        .title {
+          margin-top: 60px;
+          font-size: 19px;
+        }
+        .subTitle {
+          font-size: 16px;
+          margin: 20px 0;
+        }
+        .arrow {
+          margin: 0 0 0px 0;
+          img {
+            margin: 10px;
+            width: 100px;
+          }
+        }
+        .maps {
+          width: 100%;
+        }
+      }
+      .rightBlock {
+        .mapkarta {
+          margin: -50px 0 20px 0;
+          width: 460px;
+        }
+      }
+      .background {
+        width: 420px;
+        bottom: 100px;
+        right: -250px;
+      }
+    }
+  }
+}

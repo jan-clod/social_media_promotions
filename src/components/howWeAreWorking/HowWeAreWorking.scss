@@ -1,0 +1,241 @@
+.howWeAreWorking {
+  position: relative;
+  background-color: #ebf3ff;
+  color: #ebf3ff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 30, 97, 1) 0%,
+    rgba(56, 117, 221, 1) 100%
+  );
+  .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .contentContainer {
+    z-index: 2;
+    .contentTitle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+      .volume {
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+    button {
+      position: relative;
+      z-index: 2;
+      border: 2px solid white;
+      background-color: #ebf3ff00;
+      color: white;
+      border-radius: 7px;
+      -webkit-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+      -moz-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.2);
+    }
+  }
+  .background {
+    position: absolute;
+    z-index: 1;
+  }
+  .circle1 {
+    top: 0px;
+    left: 0;
+    filter: blur(10px);
+  }
+  .circle2 {
+    top: 100px;
+    right: 100px;
+    width: 100px;
+  }
+  .circle3 {
+    top: 700px;
+    left: 200px;
+    width: 250px;
+  }
+  .circle4 {
+    top: 700px;
+    left: 450px;
+    width: 80px;
+    filter: blur(10px);
+  }
+  .star1 {
+    top: 100px;
+    right: 700px;
+    width: 80px;
+  }
+  .star2 {
+    top: -80px;
+    right: 500px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .howWeAreWorking {
+    padding-top: 150px;
+    height: 1200px;
+    .title {
+      font-size: 24px;
+      div {
+        img {
+          margin: 10px;
+        }
+      }
+    }
+    .contentContainer {
+      width: 761px;
+      font-size: 20px;
+      .contentTitle {
+        h1 {
+          font-size: 80px;
+          margin: 0;
+          z-index: 2;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+        h3 {
+          margin: 7px 0 0 0;
+          font-size: 30px;
+        }
+        .volume {
+          width: 178px;
+          top: -100px;
+          left: -90px;
+          z-index: 1;
+        }
+      }
+      button {
+        width: 315px;
+        height: 70px;
+        font-size: 18px;
+        margin: 65px 0;
+      }
+    }
+    .raketa {
+      height: 640px;
+      right: -700px;
+      top: -300px;
+    }
+  }
+}
+@media screen and (max-width: 1919px) {
+  .howWeAreWorking {
+    padding-top: 150px;
+    height: 1400px;
+    .title {
+      font-size: 24px;
+      div {
+        img {
+          margin: 10px;
+        }
+      }
+    }
+    .contentContainer {
+      width: 654px;
+      font-size: 20px;
+      .contentTitle {
+        h1 {
+          font-size: 80px;
+          margin: 0;
+          z-index: 2;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+        h3 {
+          margin: 7px 0 0 0;
+          font-size: 30px;
+        }
+        .volume {
+          width: 178px;
+          top: -100px;
+          left: -90px;
+          z-index: 1;
+        }
+      }
+      button {
+        width: 315px;
+        height: 70px;
+        font-size: 18px;
+        margin: 65px 0;
+      }
+    }
+    .raketa {
+      height: 530px;
+      right: -300px;
+      top: 100px;
+    }
+    .star1 {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .howWeAreWorking {
+    padding-top: 150px;
+    height: 1170px;
+    .title {
+      font-size: 19px;
+      z-index: 2;
+      div {
+        img {
+          margin: 10px;
+        }
+      }
+    }
+    .contentContainer {
+      width: 520px;
+      font-size: 14px;
+      .contentTitle {
+        h1 {
+          font-size: 63px;
+          margin: 0;
+          z-index: 2;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+        h3 {
+          margin: 7px 0 0 0;
+          font-size: 24px;
+        }
+        .volume {
+          width: 100px;
+          top: -50px;
+          left: -50px;
+          z-index: 1;
+        }
+      }
+      button {
+        width: 250px;
+        height: 55px;
+        font-size: 13px;
+        margin: 65px 0;
+      }
+    }
+    .raketa {
+      height: 350px;
+      right: -180px;
+      top: 70px;
+    }
+    .star1 {
+      display: none;
+    }
+    .star2 {
+      display: none;
+    }
+  }
+}

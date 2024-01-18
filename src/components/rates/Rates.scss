@@ -1,0 +1,155 @@
+.rates {
+  .title {
+    text-align: center;
+    color: #00309c;
+    font-size: 24px;
+    margin: 150px 0 10px 0;
+  }
+  .arrow {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    button {
+      background-color: #3874dd00;
+      border: 0px;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+    img {
+      margin: 10px;
+      width: 100px;
+    }
+  }
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5b5b5b;
+    .rateRender {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .background {
+      position: absolute;
+    }
+    .man {
+      height: 450px;
+      top: -280px;
+      right: 100px;
+    }
+    .raketa {
+      height: 450px;
+      bottom: -300px;
+      left: 90px;
+    }
+    .circle1 {
+      height: 480px;
+      top: -200px;
+      left: -300px;
+    }
+
+    .cardContainer {
+      position: relative;
+      width: 420px;
+      background-color: white;
+      border-radius: 20px;
+      margin: 50px 0;
+      height: 1000px;
+      .cardBorder {
+        position: relative;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 10px;
+        border: 1px solid #a1c6fd;
+        border-radius: 10px;
+        max-height: 100%;
+        .cardTitle {
+          margin: 50px 0 15px 0;
+          font-size: 21px;
+          text-align: center;
+        }
+        .cardSubTitle {
+          margin: 0 0 35px 0;
+          font-size: 14px;
+          text-align: center;
+        }
+        .content {
+          font-size: 13px;
+          margin: 0 auto;
+          width: 292px;
+        }
+        .bottom {
+          position: absolute;
+          bottom: 0;
+          left: -11px;
+          .oldPrice {
+            margin: 100px 0 10px 0;
+            font-size: 13px;
+            text-align: center;
+            text-decoration: line-through;
+          }
+          .price {
+            margin: 0 0 30px 0;
+            font-size: 64px;
+            text-align: center;
+            font-weight: 600;
+            color: #001e61;
+            background: linear-gradient(90deg, #013bf6 30%, #3875dd 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .button {
+            border-radius: 7px;
+            border: 0px;
+            font-size: 17px;
+            color: white;
+            margin-top: -20px;
+            height: 70px;
+            width: 420px;
+            background: linear-gradient(90deg, #013bf6 30%, #3875dd 90%);
+          }
+        }
+      }
+      .cone {
+        position: absolute;
+        height: 43px;
+        top: -43px;
+        right: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1919px) {
+  .rates {
+    .circle2 {
+      height: 480px;
+      bottom: -200px;
+      right: -200px;
+    }
+  }
+}
+@media screen and (max-width: 1919px) {
+  .rates {
+    .circle2 {
+      height: 200px;
+      height: 480px;
+      bottom: -200px;
+      right: 0px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .rates {
+    .circle2 {
+      height: 200px;
+      height: 480px;
+      bottom: -200px;
+      right: 0px;
+    }
+  }
+}

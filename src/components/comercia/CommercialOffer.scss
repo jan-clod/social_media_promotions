@@ -1,0 +1,31 @@
+.commercialOffer {
+  position: relative;
+  min-height: 913px;
+  margin-top: -550px;
+  z-index: 3;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-size: 24px;
+      color: white;
+      margin: 15px 0;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: white;
+      margin: 0 0 35px 0;
+
+    }
+  } 
+}
+@media screen and (min-width: 1920px) {
+}
+@media screen and (max-width: 1919px) {
+}
+@media screen and (max-width: 1023px) {
+}

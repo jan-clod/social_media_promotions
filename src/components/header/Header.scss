@@ -1,0 +1,83 @@
+@import './../../UI/styles/colors.scss';
+
+.header {
+  color: $mainFontDark;
+  margin-bottom: -1px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 111px;
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    .logo {
+      height: 56px;
+      margin-right: 15px;
+    }
+  }
+  .infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      height: 54px;
+      margin-left: 5px;
+    }
+    div {
+      border-bottom: 2px dotted #132f67;
+    }
+  }
+}
+.bottomConteiner {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 30, 97, 1) 0%,
+    rgba(56, 117, 221, 1) 100%
+  );
+  position: relative;
+  height: 80px;
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ebf3ff;
+    height: 100%;
+    div {
+      &:hover {
+        color: #ffffffc1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+
+}
+
+@media screen and (max-width: 1023px) {
+  .top {
+    height: 89px;
+    font-size: 15px;
+    .logoContainer {
+        .logo {
+          height: 45px;
+          margin-right: 15px;
+        }
+      }
+      .infoContainer {
+        img {
+          height: 43px;
+          margin-left: 5px;
+        }
+      }
+  }
+  .bottomConteiner {
+    height: 64px;
+    font-size: 15px;
+  }
+}
+/* @extend %h3-main-placeholder; */
