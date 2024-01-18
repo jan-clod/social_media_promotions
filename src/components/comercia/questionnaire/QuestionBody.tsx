@@ -27,24 +27,27 @@ export const QuestionBody: React.FC<IAnswer & questionBody> = ({
   return (
     <div className="questionBody">
       <div className="question">{clue}</div>
-      {typeof answer === 'string' ? (
-        <input
-          value={reply}
-          onChange={onChancgeHandler}
-          placeholder={answer}
-          className="inputanswer"
-        />
-      ) : (
-        answer.map((el, key) => (
-          <div
-            className="variant"
-            key={key}
-            onClick={() => selectedAnswerToQuestion(index, el)}
-          >
-            {el}
-          </div>
-        ))
-      )}
+      <div>
+        {typeof answer === 'string' ? (
+          <input
+            value={reply}
+            onChange={onChancgeHandler}
+            placeholder={answer}
+            className="inputanswer"
+          />
+        ) : (
+          answer.map((el, key) => (
+            <div
+              className="variant"
+              key={key}
+              onClick={() => selectedAnswerToQuestion(index, el)}
+            >
+              <div className="checkbox"></div>
+              <div>{el}</div>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };

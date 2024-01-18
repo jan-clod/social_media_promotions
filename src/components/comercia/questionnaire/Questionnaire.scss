@@ -14,12 +14,53 @@
   }
   .questionBodyContainer {
     height: 72%;
+
+    .questionBody {
+      max-height: 350px;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+      }
+      .inputanswer {
+        width: 100%;
+        height: 55px;
+        background-color: #ebf3ff;
+        border: 1px solid rgba(255, 0, 0, 0);
+        color: #3875dd;
+        margin: 20px 0;
+        padding: 0 20px;
+        font-size: 13px;
+      }
+      .question {
+        margin: 20px 0;
+      }
+      .variant {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        width: 350px;
+        cursor: pointer;
+        &:hover{
+          background-color: #eaeaea;
+          border-radius: 25px;
+        }
+        .checkbox {
+          background-color: #ebf3ff;
+          width: 53px;
+          height: 53px;
+          border-radius: 50%;
+          margin: 0 20px 0 -10px;
+        }
+      }
+    }
   }
   .buttonContainer {
     position: relative;
     z-index: 3;
     text-align: center;
     margin: 0 0 -150px 0;
+
     button {
       background-color: #3874dd00;
       border: 0px;
