@@ -6,7 +6,7 @@ import { QuestionBody } from './QuestionBody';
 import { data } from '../../../bll/data';
 
 export const Questionnaire: React.FC = () => {
-  let [index, setIndex] = useState(0);
+  let [index, setIndex] = useState(0); //индекс вопроса
   let [indexs, setIndexs] = useState(true);
   let [backQuestionDis, setBackQuestionDis] = useState(false);
   let [nextQuestionDis, setNextQuestionDis] = useState(false);
@@ -23,11 +23,11 @@ export const Questionnaire: React.FC = () => {
   };
 
   const backQuestionHandler = () => {
-    indexs && index > 0 && setIndex(--index);
+    indexs && index > 0 && setIndex(index - 1);
     setReply('');
   };
   const nextQuestionHandler = () => {
-    indexs && index < data.length && setIndex(++index);
+    indexs && index < data.length && setIndex(index + 1);
     replyToQuestion();
     setReply('');
   };
@@ -44,6 +44,7 @@ export const Questionnaire: React.FC = () => {
       <div className="titleQuestion"> {data[index].question}</div>
       <div className="progressBar">
         <div style={{ width: `${replyData.length}5%` }}></div>
+        <div>{++index}-й вопрос из 11</div>
       </div>
       <div className="questionBodyContainer">
         {data[index].body.map((el, key) => (
