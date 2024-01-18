@@ -26,7 +26,7 @@ export const Map: React.FC = () => {
         </div>
         <div className="rightBlock">
           <a target="_blank" href="https://yandex.by/maps/-/CDu7u-Px">
-            <img src={mapkarta} alt="404" className="mapkarta" />
+            <img src={mapkarta} alt="404" className="mapkarta" title='посмотреть на яндекс картах'/>
           </a>
         </div>
         <img src={circle} alt="404" className="background circle1" />
