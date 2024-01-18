@@ -1,9 +1,8 @@
 .promotionPopup {
-    transition: all 0.5s;
-    transition: color .3s;
-    transition: margin .5s;
-    
-    position: relative;
+  transition: all 0.2s;
+  animation: go-blur 0.21s alternate;
+
+  position: relative;
   top: 0;
   overflow: hidden;
   z-index: 200;
@@ -60,8 +59,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-      background-color: #0166fd;
-
+        background-color: #0166fd;
       }
     }
   }
@@ -87,5 +85,16 @@
         rgb(5, 71, 184) 100%
       );
     }
+  }
+}
+
+@keyframes go-blur {
+  from {
+    color: rgba(255, 255, 255, 0);
+    margin-top: -200px;
+  }
+  to {
+    color: rgb(0, 0, 0);
+    margin-top: 00px;
   }
 }
