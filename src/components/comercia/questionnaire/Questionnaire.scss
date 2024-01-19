@@ -1,22 +1,45 @@
 .questionnaire {
   background-color: white;
-
-  .titleQuestion {
-    height: 10%;
+  position: relative;
+  .applicationAccepted {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .like {
+      width: 321px;
+    }
   }
-  .progressBar {
-    height: 3%;
-    div {
-      width: 100%;
-      height: 5px;
-      background-color: #001e61;
+  .titleQuestion {
+    height: 7%;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .number {
+    }
+    .progressBar {
+      width: 87%;
+      height: 15px;
+      margin-top: 18px;
+      .progressBarBackground {
+        z-index: 10;
+        background-color: #e1e1e1;
+        border-radius: 2px;
+        div {
+          height: 5px;
+          border-radius: 2px;
+          background-color: #001e61;
+        }
+      }
     }
   }
   .questionBodyContainer {
-    height: 72%;
-
+    min-height: 72%;
     .questionBody {
-      max-height: 350px;
       div {
         display: flex;
         flex-wrap: wrap;
@@ -32,25 +55,40 @@
         padding: 0 20px;
         font-size: 13px;
       }
-      .question {
+      .clue {
         margin: 20px 0;
       }
       .variant {
         display: flex;
         align-items: center;
-        margin: 20px;
-        width: 350px;
-        cursor: pointer;
-        &:hover{
-          background-color: #eaeaea;
-          border-radius: 25px;
-        }
-        .checkbox {
-          background-color: #ebf3ff;
-          width: 53px;
-          height: 53px;
-          border-radius: 50%;
-          margin: 0 20px 0 -10px;
+        margin: 20px 0;
+
+        .checkboxConainer {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+ 
+          &:hover {
+            background-color: #eaeaea;
+            border-radius: 25px;
+          }
+          .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #ebf3ff;
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            margin: 0 20px 0 0;
+            .active {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              background-color: #0166fd;
+            }
+          }
         }
       }
     }
@@ -70,7 +108,7 @@
       }
       &:disabled {
         cursor: auto;
-        background-color: #3874dd15;
+        background-color: #101b2e15;
       }
     }
     img {
@@ -87,7 +125,14 @@
     .titleQuestion {
       font-size: 22px;
     }
-
+    .flex {
+      .number {
+        font-size: 13px;
+      }
+      .progressBar {
+        width: 80%;
+      }
+    }
     .questionBodyContainer {
       margin: 30px 0;
       .question {
@@ -95,6 +140,28 @@
       }
       .variant {
         font-size: 16px;
+        .checkboxConainer {
+          margin: 20px;
+          width: 350px;
+          p {
+            max-width: 250px;
+          }
+          span {
+            max-width: 250px;
+          }
+          .checkbox {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            margin: 0 20px 0 0;
+            .active {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              background-color: #0166fd;
+            }
+          }
+        }
       }
     }
     .buttonContainer {
@@ -109,7 +176,14 @@
     .titleQuestion {
       font-size: 22px;
     }
-
+    .flex {
+      .number {
+        font-size: 13px;
+      }
+      .progressBar {
+        width: 80%;
+      }
+    }
     .questionBodyContainer {
       margin: 30px 0;
       .question {
@@ -117,6 +191,28 @@
       }
       .variant {
         font-size: 16px;
+        .checkboxConainer {
+          margin: 20px;
+          width: 300px;
+          p {
+            max-width: 250px;
+          }
+          span {
+            max-width: 350px;
+          }
+          .checkbox {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            margin: 0 20px 0 0;
+            .active {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              background-color: #0166fd;
+            }
+          }
+        }
       }
     }
     .buttonContainer {
@@ -131,14 +227,44 @@
     .titleQuestion {
       font-size: 17px;
     }
-
+    .flex {
+      .number {
+        font-size: 10px;
+      }
+      .progressBar {
+        width: 80%;
+      }
+    }
     .questionBodyContainer {
       margin: 15px 0;
       .question {
         font-size: 14px;
       }
+
       .variant {
         font-size: 12px;
+        .checkboxConainer {
+          margin: 10px;
+          width: 250px;
+          p {
+            max-width: 170px;
+          }
+          span {
+            max-width: 170px;
+          }
+          .checkbox {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 20px 0 0;
+            .active {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: #0166fd;
+            }
+          }
+        }
       }
     }
     .buttonContainer {

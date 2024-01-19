@@ -3,16 +3,19 @@ export interface IAnswer {
   answer: string | string[];
 }
 export interface IQuestion {
+  typeTest: 1 | 2 | 3 | 4 | 5;
   question: string;
   body: IAnswer[];
 }
 
 export const data: IQuestion[] = [
   {
+    typeTest: 2,
     question: 'Укажите ваши ФИО',
     body: [{ clue: 'Ваш вариант ответа', answer: 'Иванов Иван Иванович' }],
   },
   {
+    typeTest: 1,
     question: 'Каким свободным временем в день  располагаете?',
     body: [
       {
@@ -22,21 +25,25 @@ export const data: IQuestion[] = [
     ],
   },
   {
+    typeTest: 2,
     question:
       'Расскажите о своём опыте в SMM? Где встречались с данной сферой?',
     body: [{ clue: 'Ваш вариант ответа', answer: 'через запятую' }],
   },
   {
+    typeTest: 2,
     question:
       'Укажите ссылку на Ваш самый успешный продающий пост в любом паблике',
     body: [{ clue: 'Ваш вариант ответа', answer: 'через запятую' }],
   },
   {
+    typeTest: 2,
     question:
       'О каких инструментах продвижения в сосетях слышали и пользовались?',
     body: [{ clue: 'Ваш вариант ответа', answer: 'через запятую' }],
   },
   {
+    typeTest: 3,
     question: 'В каких соцсетях чувствуете себя как рыба в воде?',
     body: [
       {
@@ -56,6 +63,7 @@ export const data: IQuestion[] = [
     ],
   },
   {
+    typeTest: 1,
     question: 'В каком направлении считаете себя сильным специалистом?',
     body: [
       {
@@ -72,6 +80,7 @@ export const data: IQuestion[] = [
     ],
   },
   {
+    typeTest: 1,
     question: 'Мы однозначно с вами сработаемся, если',
     body: [
       {
@@ -86,11 +95,13 @@ export const data: IQuestion[] = [
     ],
   },
   {
+    typeTest: 2,
     question:
       'О каких инструментах продвижения в сосетях слышали и пользовались?',
     body: [{ clue: 'Ваш вариант ответа', answer: 'через запятую' }],
   },
   {
+    typeTest: 1,
     question: 'Был ли опыт в создании сторис для инстаграма?',
     body: [
       {
@@ -100,6 +111,7 @@ export const data: IQuestion[] = [
     ],
   },
   {
+    typeTest: 4,
     question: 'Готово! Хотите узнать результат?',
     body: [
       {
@@ -113,6 +125,16 @@ export const data: IQuestion[] = [
       {
         clue: 'Соглашаюсь с обработкой персональных данных',
         answer: [''],
+      },
+    ],
+  },
+  {
+    typeTest: 5,
+    question: 'end',
+    body: [
+      {
+        clue: '',
+        answer: '',
       },
     ],
   },

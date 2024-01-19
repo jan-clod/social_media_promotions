@@ -28,7 +28,7 @@ export const PromotionPopup: React.FC = () => {
         Соглашаюсь с обработкой персональных данных
       </div>
       <div className="buttonContainer">
-        <NavLink to="/welcome">
+        <NavLink to="/error">
           <button className="button">получить</button>
         </NavLink>
       </div>

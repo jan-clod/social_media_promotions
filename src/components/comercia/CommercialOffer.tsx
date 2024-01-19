@@ -8,7 +8,7 @@ export const CommercialOffer: React.FC = () => {
     <div className="commercialOffer">
       <Container className="container">
         <div className="title">Коммерческое предложение</div>
-        <div className="subtitle">Коммерческое предложение</div>
+        <div className="subtitle">для социальных стей</div>
         <Questionnaire />
       </Container>
     </div>
