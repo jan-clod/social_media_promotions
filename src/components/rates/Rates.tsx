@@ -15,7 +15,6 @@ export const Rates: React.FC = () => {
   let [index, setIndex] = useState(0);
   const { width } = useResize();
   const arrRate = [<RateOne />, <RateTwo />, <RateThree />];
-
   const rateRender = () => {
     if (width >= 1920) {
       return (
@@ -25,9 +24,45 @@ export const Rates: React.FC = () => {
           <RateThree />
         </div>
       );
-    } else {
-      return arrRate[index];
     }
+    if (width >= 1024 && width <= 1919) {
+      if (index === 0)
+        return (
+          <div
+            className="rateRender"
+            style={{ justifyContent: 'space-between' }}
+          >
+            {arrRate[0]} {arrRate[1]}
+          </div>
+        );
+
+      if (index === 1) {
+        return (
+          <div
+            className="rateRender"
+            style={{ justifyContent: 'space-between' }}
+          >
+            {arrRate[1]} {arrRate[2]}
+          </div>
+        );
+      }
+
+      if (index === 2) {
+        return (
+          <div
+            className="rateRender"
+            style={{ justifyContent: 'space-between' }}
+          >
+            {arrRate[2]}
+          </div>
+        );
+      }
+    }
+    return (
+      <div className="rateRender" style={{ justifyContent: 'space-around' }}>
+        {arrRate[index]}
+      </div>
+    );
   };
   const rightOnClick = () => index < 2 && setIndex(++index);
   const leftOnClick = () => index > 0 && setIndex(--index);
