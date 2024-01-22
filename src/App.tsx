@@ -7,12 +7,10 @@ import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <div className="App">
-      <MainPage />
-{/*       <Routes>
+      <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/error" element={<ErrorPage />} />
-        <Route path="*" element={<Navigate to="/error" />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

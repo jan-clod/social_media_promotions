@@ -21,6 +21,13 @@
       display: flex;
       align-items: center;
       z-index: 2;
+      font-weight: 400;
+      h1 {
+        font-weight: 400;
+      }
+      h3 {
+        font-weight: 600;
+      }
       .volume {
         position: absolute;
         z-index: 1;
@@ -132,7 +139,7 @@
 @media screen and (max-width: 1919px) {
   .howWeAreWorking {
     padding-top: 150px;
-    height: 1400px;
+    height: 1200px;
     .title {
       font-size: 24px;
       div {
@@ -142,12 +149,12 @@
       }
     }
     .contentContainer {
-      width: 654px;
+      width: 575px;
       font-size: 20px;
       .contentTitle {
         h1 {
           font-size: 80px;
-          margin: 0;
+          margin: 0 10px 0 0;
           z-index: 2;
         }
         p {
@@ -156,7 +163,7 @@
         }
         h3 {
           margin: 7px 0 0 0;
-          font-size: 30px;
+          font-size: 25px;
         }
         .volume {
           width: 178px;
@@ -173,9 +180,9 @@
       }
     }
     .raketa {
-      height: 530px;
-      right: -300px;
-      top: 100px;
+      height: 430px;
+      right: -380px;
+      top: -100px;
     }
     .star1 {
       display: none;
